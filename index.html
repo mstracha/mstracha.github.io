@@ -388,18 +388,15 @@
           </p>
 
           <div class="hero-actions">
-            <a href="https://mark-strachan.com/resume/CV%20-%20Mark%20Strachan.pdf" 
-               class="btn btn-primary">
+            <a href="https://mark-strachan.com/resume/CV%20-%20Mark%20Strachan.pdf" class="btn btn-primary">
               <span>Resume</span>
             </a>
-            <a href="https://github.com/mstracha/"
-               target="_blank" rel="noopener noreferrer"
-               class="btn btn-ghost">
+
+            <a href="https://github.com/mstracha/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
               <span>GitHub</span>
             </a>
-            <a href="https://www.linkedin.com/in/markdavidstrachan/"
-               target="_blank" rel="noopener noreferrer"
-               class="btn btn-ghost">
+
+            <a href="https://www.linkedin.com/in/markdavidstrachan/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
               <span>LinkedIn</span>
             </a>
           </div>
@@ -439,6 +436,7 @@
             My work sits where XR, AI, and robotics converge — where real‑time performance,
             determinism, and cross‑domain integration all matter at once.
           </p>
+
           <p class="text-soft">
             These systems support spatial computing, high speed data streaming and caching,
             and cloud‑scale infrastructure.
@@ -483,131 +481,148 @@
           </div>
         </section>
 
-<section id="videos" class="section">
-    <h2>Videos</h2>
-    <p>A rotating selection of XR and robotics demos.</p>
+        <!-- VIDEOS -->
+        <section id="videos" class="section">
+          <h2>Videos</h2>
+          <p>A rotating selection of video demos.</p>
 
-    <style>
-        .video-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-
-        .video-card {
-            position: relative;
-            background: linear-gradient(to bottom right, #0d1117, #111827);
-            border: 1px solid #1f2937;
-            border-radius: 6px;
-            aspect-ratio: 16 / 9;
-            overflow: hidden;
-            cursor: pointer;
-        }
-
-        .video-card:hover {
-            border-color: var(--accent-glow);
-        }
-
-        /* ⭐ FIXED THUMBNAILS — clean, responsive, uniform */
-        .video-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .video-overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-            display: flex;
-            align-items: flex-end;
-            padding: 0.6rem 0.7rem;
-            font-size: 0.75rem;
-            color: var(--text-main);
-        }
-
-        @media (max-width: 900px) {
+          <style>
             .video-grid {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              gap: 1rem;
+              margin-top: 1.5rem;
+            }
+
+            .video-card {
+              position: relative;
+              background: linear-gradient(to bottom right, #0d1117, #111827);
+              border: 1px solid #1f2937;
+              border-radius: 6px;
+              aspect-ratio: 16 / 9;
+              overflow: hidden;
+              cursor: pointer;
+            }
+
+            .video-card:hover {
+              border-color: var(--accent-glow);
+            }
+
+            .video-card img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              display: block;
+            }
+
+            .video-overlay {
+              position: absolute;
+              inset: 0;
+              background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+              display: flex;
+              align-items: flex-end;
+              padding: 0.6rem 0.7rem;
+              font-size: 0.75rem;
+              color: var(--text-main);
+            }
+
+            @media (max-width: 900px) {
+              .video-grid {
                 grid-template-columns: repeat(2, 1fr);
+              }
             }
-        }
 
-        @media (max-width: 600px) {
-            .video-grid {
+            @media (max-width: 600px) {
+              .video-grid {
                 grid-template-columns: 1fr;
+              }
             }
-        }
-    </style>
+          </style>
 
-    <div class="video-grid">
+          <div class="video-grid">
+            <!-- 1 -->
+            <div class="video-card"
+                 data-video-id="3FWYe5pym_U"
+                 data-video-title="There's a pentagram in your music">
+              <img src="https://mark-strachan.com/thumbnails/pentagramMusic.png"
+                   alt="There's a pentagram in your music">
+              <div class="video-overlay">There's a pentagram in your music</div>
+            </div>
 
-        <!-- 1 -->
-        <a class="video-card" href="https://www.youtube.com/watch?v=3FWYe5pym_U&t" target="_blank">
-            <img src="https://mark-strachan.com/thumbnails/pentagramMusic.png"
-                 alt="There's a pentagram in your music">
-            <div class="video-overlay">There's a pentagram in your music</div>
-        </a>
+            <!-- 2 -->
+            <div class="video-card"
+                 data-video-id="V6br-nOWsE8"
+                 data-video-title="Complex Materials and the Scriptable Render Pipeline">
+              <img src="https://mark-strachan.com/thumbnails/surfaces.png"
+                   alt="Complex Materials and the Scriptable Render Pipeline">
+              <div class="video-overlay">Complex Materials and the Scriptable Render Pipeline</div>
+            </div>
 
-        <!-- 2 -->
-        <a class="video-card" href="https://youtu.be/V6br-nOWsE8" target="_blank">
-            <img src="https://mark-strachan.com/thumbnails/surfaces.png"
-                 alt="Complex Materials and the Scriptable Render Pipeline">
-            <div class="video-overlay">Complex Materials and the Scriptable Render Pipeline</div>
-        </a>
+            <!-- 3 -->
+            <div class="video-card"
+                 data-video-id="D-Ci6CFdXrM"
+                 data-video-title="Time Becomes a Loop">
+              <img src="https://mark-strachan.com/thumbnails/rhythm.png"
+                   alt="Time Becomes a Loop">
+              <div class="video-overlay">Time Becomes a Loop</div>
+            </div>
 
-        <!-- 3 -->
-        <a class="video-card" href="https://www.youtube.com/watch?v=D-Ci6CFdXrM" target="_blank">
-            <img src="https://mark-strachan.com/thumbnails/rhythm.png"
-                 alt="Time Becomes a Loop">
-            <div class="video-overlay">Time Becomes a Loop</div>
-        </a>
+            <!-- 4 -->
+            <div class="video-card"
+                 data-video-id="EP9adLfN_VY"
+                 data-video-title="Haptics demo reel">
+              <img src="https://mark-strachan.com/thumbnails/woojerVR.png"
+                   alt="Haptics demo reel">
+              <div class="video-overlay">Haptics demo reel</div>
+            </div>
 
-        <!-- 4 -->
-        <a class="video-card" href="https://youtu.be/EP9adLfN_VY" target="_blank">
-            <img src="https://mark-strachan.com/thumbnails/woojerVR.png"
-                 alt="Haptics demo reel">
-            <div class="video-overlay">Haptics demo reel</div>
-        </a>
+            <!-- 5 -->
+            <div class="video-card"
+                 data-video-id="IrQxmCfygsY"
+                 data-video-title="Rendering and Coding for GPU">
+              <img src="https://mark-strachan.com/thumbnails/fixInPost.png"
+                   alt="Rendering and Coding for GPU">
+              <div class="video-overlay">Rendering and Coding for GPU</div>
+            </div>
 
-        <!-- 5 -->
-        <a class="video-card" href="https://youtu.be/IrQxmCfygsY" target="_blank">
-            <img src="https://mark-strachan.com/thumbnails/fixInPost.png"
-                 alt="Rendering and Coding for GPU">
-            <div class="video-overlay">Rendering and Coding for GPU</div>
-        </a>
+            <!-- 6 -->
+            <div class="video-card"
+                 data-video-id="DB4IosdIs8g"
+                 data-video-title="MusicShaper Walkthrough">
+              <img src="https://mark-strachan.com/thumbnails/ms.png"
+                   alt="MusicShaper Walkthrough">
+              <div class="video-overlay">MusicShaper Walkthrough</div>
+            </div>
 
-        <!-- 6 -->
-        <a class="video-card" href="https://youtu.be/DB4IosdIs8g" target="_blank">
-            <img src="https://mark-strachan.com/thumbnails/ms.png"
-                 alt="MusicShaper Walkthrough">
-            <div class="video-overlay">MusicShaper Walkthrough</div>
-        </a>
+            <!-- 7 -->
+            <div class="video-card"
+                 data-video-id="t0MYLOuV2Ac"
+                 data-video-title="Spirals of Light">
+              <img src="https://mark-strachan.com/thumbnails/spiral.png"
+                   alt="Spirals of Light">
+              <div class="video-overlay">Spirals of Light</div>
+            </div>
 
-        <!-- 7 -->
-        <a class="video-card" href="https://www.youtube.com/watch?v=t0MYLOuV2Ac" target="_blank">
-            <img src="https://mark-strachan.com/thumbnails/spiral.png"
-                 alt="Spirals of Light">
-            <div class="video-overlay">Spirals of Light</div>
-        </a>
+            <!-- 8 -->
+            <div class="video-card"
+                 data-video-id="a_5pjLomzn8"
+                 data-video-title="Explorations">
+              <img src="https://mark-strachan.com/thumbnails/tunnel.png"
+                   alt="Explorations">
+              <div class="video-overlay">Explorations</div>
+            </div>
 
-        <!-- 8 -->
-        <a class="video-card" href="https://youtu.be/a_5pjLomzn8" target="_blank">
-            <img src="https://mark-strachan.com/thumbnails/tunnel.png"
-                 alt="Explorations">
-            <div class="video-overlay">Explorations</div>
-        </a>
+            <!-- 9 -->
+            <div class="video-card"
+                 data-video-id="EGclRqKqXeI"
+                 data-video-title="Where Rhythm and Harmony Meet">
+              <img src="https://mark-strachan.com/thumbnails/fullSystem.png"
+                   alt="Where Rhythm and Harmony Meet">
+              <div class="video-overlay">Where Rhythm and Harmony Meet</div>
+            </div>
+          </div>
+        </section>
 
-        <!-- 9 -->
-        <a class="video-card" href="https://www.youtube.com/watch?v=EGclRqKqXeI" target="_blank">
-            <img src="https://mark-strachan.com/thumbnails/fullSystem.png"
-                 alt="Where Rhythm and Harmony Meet">
-            <div class="video-overlay">Where Rhythm and Harmony Meet</div>
-        </a>
-
-    </div>
-</section>
         <!-- EXPERIENCE -->
         <section id="experience" class="section">
           <h2>Experience</h2>
@@ -719,6 +734,7 @@
             <button class="btn btn-primary" onclick="revealEmail()">
               <span id="email-label">Email</span>
             </button>
+
             <button class="btn btn-primary" onclick="revealPhone()">
               <span id="phone-label">Phone</span>
             </button>
@@ -759,6 +775,7 @@
                 font-size: 0.9rem;
                 color: var(--text-soft);">✕</div>
             </div>
+
             <div class="video-modal-iframe-wrapper" style="
               position: relative;
               width: 100%;
@@ -836,11 +853,9 @@
     (function () {
       const canvas = document.getElementById('particleCanvas');
       const ctx = canvas.getContext('2d');
-
       let width = 0;
       let height = 0;
       let particles = [];
-
       const maxDistance = 140;
       const particleColor = '#66FCF1';
 
@@ -856,18 +871,15 @@
 
         canvas.width = width * dpr;
         canvas.height = height * dpr;
-
         canvas.style.width = width + 'px';
         canvas.style.height = height + 'px';
 
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-
         initParticles();
       }
 
       function initParticles() {
         particles = [];
-
         if (width === 0 || height === 0) return;
 
         const area = width * height;
@@ -902,7 +914,6 @@
 
         for (let i = 0; i < particles.length; i++) {
           const p1 = particles[i];
-
           p1.x += p1.vx;
           p1.y += p1.vy;
 
@@ -921,7 +932,6 @@
               const alpha = 1 - dist / maxDistance;
               ctx.strokeStyle = `rgba(102, 252, 241, ${alpha * 0.35})`;
               ctx.lineWidth = 0.6;
-
               ctx.beginPath();
               ctx.moveTo(p1.x, p1.y);
               ctx.lineTo(p2.x, p2.y);
